@@ -8,7 +8,7 @@
 let lightIntensity = 0
 let neopixleStrip: neopixel.Strip = null
 
-//clean
+//cleany5
 basic.clearScreen()
 neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
