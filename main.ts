@@ -74,6 +74,12 @@ input.onButtonPressed(Button.A, function () {
     }
 
     pause(7000)
+    neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
+    neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+    neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+    neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+    neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+    neopixleStrip.show()
     basic.showIcon(IconNames.Happy)
 
 })
