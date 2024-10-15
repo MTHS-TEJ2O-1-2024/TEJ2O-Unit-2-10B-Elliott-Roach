@@ -73,7 +73,7 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.show()
     }
 
-    pause(7000)
+    pause(5000)
     neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
     neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
     neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
