@@ -5,7 +5,7 @@
  * This program takes light levels
 */
 
-let lightIntensity = null
+let lightIntensity = 0
 let neopixleStrip: neopixel.Strip = null
 //clean
 basic.clearScreen()
