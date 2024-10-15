@@ -5,10 +5,10 @@
  * This program takes light levels
 */
 
-let lightIntensity = 0
+let lightIntensity = -1
 let neopixleStrip: neopixel.Strip = null
 
-//cleany5
+//clean
 basic.clearScreen()
 neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
