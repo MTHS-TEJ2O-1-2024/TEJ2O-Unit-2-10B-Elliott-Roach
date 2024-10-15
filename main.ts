@@ -62,6 +62,7 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.show()
     }
 
+
 //vary light
     if (lightIntensity > 208) {
         neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
@@ -71,5 +72,8 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Blue))
         neopixleStrip.show()
     }
+
+    pause(7000)
+    basic.showIcon(IconNames.Happy)
 
 })
