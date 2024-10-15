@@ -21,7 +21,7 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     lightIntensity = input.lightLevel()
-
+    pause(500)
 //vary dark
     if (lightIntensity <= 51) {
         neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
