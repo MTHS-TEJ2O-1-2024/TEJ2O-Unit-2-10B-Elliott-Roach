@@ -5,7 +5,7 @@
  * This program takes light levels
 */
 
-let lightIntensity = -1
+let lightIntensity = 0
 let neopixleStrip: neopixel.Strip = null
 
 //clean
@@ -21,7 +21,7 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     lightIntensity = input.lightLevel()
-    pause(500)
+
 //vary dark
     if (lightIntensity <= 51) {
         neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
@@ -62,7 +62,7 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.show()
     }
 
-
+/*
 //vary light
     if (lightIntensity > 208) {
         neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
@@ -72,7 +72,7 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Blue))
         neopixleStrip.show()
     }
-
+*/
     pause(5000)
     neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
     neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
@@ -81,5 +81,4 @@ input.onButtonPressed(Button.A, function () {
     neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
     neopixleStrip.show()
     basic.showIcon(IconNames.Happy)
-
 })
