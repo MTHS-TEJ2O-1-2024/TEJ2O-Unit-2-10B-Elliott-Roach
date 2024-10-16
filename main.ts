@@ -5,7 +5,7 @@
  * This program takes light levels
 */
 
-let lightIntensity = 0
+let lightIntensity:number = 0
 let neopixleStrip: neopixel.Strip = null
 
 //clean
@@ -72,7 +72,7 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Blue))
         neopixleStrip.show()
     }
-
+    basic.showNumber(lightIntensity)
     pause(5000)
     neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
     neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
