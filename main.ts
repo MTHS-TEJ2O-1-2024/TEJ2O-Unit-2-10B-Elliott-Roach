@@ -17,6 +17,7 @@ neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
 neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
 neopixleStrip.show()
 basic.showIcon(IconNames.Happy)
+lightIntensity = input.lightLevel()
 
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
